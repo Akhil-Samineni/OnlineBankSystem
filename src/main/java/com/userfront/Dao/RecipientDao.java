@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.userfront.domain.Recipient;
 
-public interface RecipientDao extends CrudRepository<Recipient, Long> {
+public interface RecipientDao extends Crud Repository<Recipient, Long> {
     List<Recipient> findAll();
 
     Recipient findByName(String recipientName);
